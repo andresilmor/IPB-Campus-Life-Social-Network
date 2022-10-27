@@ -1,0 +1,33 @@
+.Events {
+    font-family: sans-serif;
+    text-align: center;
+  }
+.content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.TextButton
+{
+    text-decoration-color: #555555;
+    
+    background-color: #C4C4C4C4;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+.comment{
+  
+  margin-bottom: 2rem;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC;
+
+}
+.add{
+  margin-top: 4rem;
+}

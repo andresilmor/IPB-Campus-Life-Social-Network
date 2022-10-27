@@ -1,0 +1,56 @@
+h3 {
+    color: #811B55;
+}
+
+.signupForm {
+    margin-top: 10rem;
+}
+
+.personalInformation {
+    width: 100%;
+}
+
+.inactiveColumn {
+    background-color: gray;
+    height: 70%;
+
+}
+
+.inactiveColumn * {
+    display: none;
+}
+
+.inactiveColumn::after {
+    content: "All Done Here";
+    color: white;
+    margin: auto;
+}
+
+.btnForm {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.interestElement {
+    padding: 0;
+}
+
+.interestElement:checked[type=checkbox]~label {
+    color: white;
+    background-color: gray;
+}
+
+.interestElement label {
+    display: inline-block;
+    padding: 0 16px;
+    border-radius: 12px;
+    border: 1px solid grey;
+}
+
+div.selected {
+    color: red;
+}
+
+.topics>div {
+    margin: 8px;
+}

@@ -1,0 +1,49 @@
+header {
+    position: fixed;
+    z-index: 10;
+    width: 101vw;
+    margin: 0 0 0 -6px;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    height: var(--header-height);
+    background-color: var(--white-light);
+    top: 0;
+}
+
+header ~ div {
+    margin-top: var(--header-height) !important;
+}
+
+nav {
+    height: 100%;
+}
+
+.login h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.login input {
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+div.login {
+    display: block;
+    overflow: hidden;
+    
+}
+
+.login > div > div {
+    border-radius: 14px;
+        padding-bottom: 16px;
+}
+
+.login > div {
+    max-width: 416px;
+    height: 100%;
+    margin-top: 0;
+    align-items: center;
+    display: flex;
+}
+

@@ -1,0 +1,26 @@
+a.button {
+    font-size: 16px;
+    padding: 6px 24px 7px;
+    background-color: var(--grey-dark);
+    width: fit-content;
+    border-radius: 62px;
+    border: 1px solid var(--grey-dark);
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+a.button {
+    color: var(--white-light);
+}
+
+a.button:hover {
+    background-color: var(--white-light);
+    color: var(--grey-dark);
+    
+}
+
+a.button ~ a {
+    margin-left: 24px;
+}

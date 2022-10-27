@@ -1,0 +1,21 @@
+.post {
+    background-color: var(--white);
+}
+
+.content {
+    font-size: 14px;
+}
+
+.interactions {
+    display: flex;
+}
+
+.interactions > * {
+    margin-right: 16px;
+}
+
+.interactions svg  {
+    min-width: 20px;
+}
+
+

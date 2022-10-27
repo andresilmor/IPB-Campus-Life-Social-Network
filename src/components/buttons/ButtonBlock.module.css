@@ -1,0 +1,22 @@
+a.button {
+    font-size: 16px;
+    padding: 12px 48px 13px;
+    width: fit-content;
+    background-color: transparent;
+    color: var(--grey-dark);
+    border-radius: 2px;
+    border: 2px solid var(--grey-dark);
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+a.button:hover {
+    background-color: var(--grey-dark);
+    color: var(--white-light);
+    
+}
+
+a.button ~ a {
+    margin-left: 24px;
+}

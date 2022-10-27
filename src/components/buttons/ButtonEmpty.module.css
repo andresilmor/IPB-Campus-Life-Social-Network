@@ -1,0 +1,23 @@
+a.button {
+    font-size: 16px;
+    padding: 6px 24px 7px;
+    width: fit-content;
+    background-color: transparent;
+    color: var(--grey-dark);
+    border-radius: 62px;
+    border: 1px solid transparent;
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+a.button:hover {
+    background-color: var(--grey-light);
+    color: inherit;
+    
+}
+
+a.button ~ a {
+    margin-left: 24px;
+}

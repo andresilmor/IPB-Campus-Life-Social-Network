@@ -1,0 +1,72 @@
+.hero_image, #about {
+    height: calc(100vh - var(--header-height));
+    align-items: center;
+    background-color: var(--white-light);
+}
+
+
+.hero_image + div {
+    height: 100%;
+}
+
+.hero_image div {
+    justify-content: end;
+}
+
+.hero_image h2 {
+    color: var(--pink-dark);
+    font-size: 55px;
+    font-family: "Open Sans Bold";
+    font-weight: bold;
+    text-align: right;
+}
+
+.hero_image h2 span {
+    font-family: "Open Sans Light";
+}
+
+.image {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100%;
+    background-image: url(https://drive.google.com/uc?export=view&id=12CPqS-qj57HPbK--QPCcF3d8YEpH2DSi);
+    position: absolute;
+    top: 0;
+    width: 65%;
+    background-position: -421px 217px;
+}
+
+
+body.modal-open .image {
+    background-size: 98.8%;
+    
+}
+
+.about {
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.about h2 {
+    font-family: "Open Sans SemiBold";
+    font-size: 28px;
+    color: var(--pink-dark)
+}
+
+.about > div:first-of-type {
+    text-align: center;
+}
+
+.about img {
+    height: auto;
+    width: 50%;
+}
+
+.about .text {
+    border-left: 2px solid #93278F;
+}
+
+

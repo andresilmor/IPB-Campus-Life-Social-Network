@@ -1,0 +1,13 @@
+
+.separator {
+    width: 3.8%;
+    height: 83%;
+    box-shadow:2px 1px 5px 0px #302;
+    width: 2.5px;
+    position: fixed;
+    background-color: var(--pink-dark);
+}
+
+.separatorCol{
+    width: 3.8%;
+}

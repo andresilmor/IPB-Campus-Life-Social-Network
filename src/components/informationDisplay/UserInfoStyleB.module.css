@@ -1,0 +1,32 @@
+a.user {
+    display: flex;
+    color: var(--black);
+    width: fit-content;
+}
+
+.user_info p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.user_info h6 {
+    font-family: "Open Sans Bold";
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.user:hover p, .user:hover h6 {
+    color: var(--pink-dark);
+}
+
+.user_info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+
+.user_avatar {
+    width: 54px !important;
+    height:54px !important;
+}

@@ -1,0 +1,29 @@
+.user {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+  
+}
+
+.user_info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.user_info h6 {
+    font-family: "Open Sans Bold";
+    font-size: 18px;
+}
+
+.user:hover p, .user:hover h6 {
+    color: var(--pink-dark);
+}
+
+.user_info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+
+

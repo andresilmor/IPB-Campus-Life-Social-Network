@@ -1,0 +1,36 @@
+
+.loginForm div {
+    justify-content: center;
+}
+
+
+.loginForm h3 {
+    font-size: 24px;
+    color: var(--pink-dark);
+    text-align: center;
+}
+
+
+.loginForm a, .loginForm a[href="/signUp"] span {
+    font-size: 16px;
+}
+
+.loginForm a[href="/signUp"] span {
+    color: var(--pink-dark);
+}
+
+.loginForm a[href="/signUp"] {
+    font-size: 14px;
+    padding: 0;
+    width: fit-content;
+    margin: auto;
+    color: var(--black);
+}
+
+.loginForm a:hover {
+    color: var(--grey-dark);
+}
+
+.loginForm a[href="/signUp"]:hover span {
+    color: var(--grey-dark);
+}

@@ -1,0 +1,46 @@
+.inputGroup {
+    display: flex;
+    width: fit-content;
+}
+
+.inputGroup > span {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    position: relative;
+    padding: 0;
+}
+
+.inputGroup label {
+    position: absolute;
+    right: 13%;
+    margin: auto;
+    margin-right: 14px;
+    width: 26px;
+    height: auto;
+}
+
+.inputGroup input {
+    border-radius: 12px;
+    border: 1px solid var(--grey-dark);
+    margin: 20px 0;
+}
+
+.inputGroup button {
+    padding: 0;
+}
+
+.inputGroup button svg {
+    width: 1.4em;
+    height: auto;
+}
+
+.inputGroup label svg {
+    fill: var(--grey-light);
+    transition: fill 0.25s ease;
+}
+
+.inputGroup label svg:hover {
+    fill: var(--grey);
+}

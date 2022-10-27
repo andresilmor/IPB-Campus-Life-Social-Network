@@ -1,0 +1,76 @@
+.search-input {
+    border-radius: 1em !important;
+    width: 100%;
+}
+
+.group-name:hover {
+    cursor: pointer;
+}
+
+.discussion-card{
+    margin-bottom: 1em;
+}
+
+.discussion-card:hover{
+    cursor: pointer;
+   
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+
+.shadow-background{  
+    pointer-events: none;
+}
+
+.group-name {
+    pointer-events: auto;
+}
+
+.shadow-background:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}   
+
+
+
+.search-input input {
+    padding: 0.6em;
+}
+
+.groups-top-row {
+    margin-bottom: 2em;
+}
+
+.group-row-card {
+    margin-bottom: 1em;
+}
+
+.group-input {
+    border-radius: 1em !important;
+    width: 100%;
+}
+
+.group-text-field div {
+    margin-top: 1em;
+    margin-left: .9em;
+    border-radius: 1em !important;
+    width: 100%;
+}
+
+.circle {
+    background: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+fieldset legend {
+    width: unset;
+}
+
+.group-header {
+    height: 25em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: end;
+}

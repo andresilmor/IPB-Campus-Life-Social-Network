@@ -1,0 +1,48 @@
+:root {
+    --pink-dark: #811B55;
+    --pink: #DFAFC5;
+    --pink-light: #F7EBF0;
+
+    --white: #FAFAFA;
+    --white-light: #FCFCFC;
+
+    --black: #313638;
+
+    --grey-dark: #555555;
+    --grey: #C4C4C4;
+    --grey-light: #DDDDDD;
+
+
+    --header-height: 72px;
+    --chat-margin: 0;
+
+}
+
+#root {
+    background-color: var(--white-light) !important;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI Regular";
+    color: var(--grey-dark);
+    text-decoration:  none;
+}
+
+ a:hover {
+    color: inherit
+}
+
+input:focus {
+    border-color: rgba(223,175,197,0.2) !important;
+    box-shadow: 0 0 0 .25rem rgba(223,175,197,0.2) !important;
+}
+
+body.modal-open  .LandingPage_image__MpiBm { 
+    background-size: 99%;
+
+}

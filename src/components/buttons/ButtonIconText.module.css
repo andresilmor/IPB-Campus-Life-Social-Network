@@ -1,0 +1,34 @@
+button.button svg {
+    max-height: 22px;
+    fill:none;
+    stroke: var(--grey-dark);
+    stroke-width: 16px;
+    stroke-linejoin: round;
+    outline: none;
+    
+}
+
+button.button.selected svg {
+    fill: var(--grey-dark);
+}
+
+button.button {
+    padding:4px 11px 5px 12px;
+    display: flex;
+    text-align: left ;
+    background-color: transparent;
+    width: fit-content;
+    transition: background-color 0.25s ease;
+    border-radius: 62px;
+    border: none;
+}
+
+button.button p {
+    font-size:12px;
+    margin: auto;
+    margin-left:8px;
+}
+
+button.button:hover {
+    background-color: var(--pink-light);
+}

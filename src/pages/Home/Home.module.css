@@ -1,0 +1,41 @@
+.user-list-fixed img {
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+
+}
+
+.user-list-fixed Link {
+    text-decoration: none;
+
+}
+
+.int {
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 100px;
+
+}
+
+.car {
+    border-radius: 20px;
+
+}
+
+.pos {
+    width: 1000px;
+    height: 1000px;
+    align-content: center;
+    padding: 150px 100px;
+    overflow: hidden;
+    align-self: center;
+    border: 1px solid #000;
+    margin: auto;
+
+
+
+
+
+}
+
