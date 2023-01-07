@@ -2,16 +2,15 @@ import React, { useState, useEffect } from 'react'
 
 //import ChatSearch from "../search/search";
 import { styles } from "../styles";
-import Chat from './Chat';
+import Chat from "./Chat"
 import ChatId from "./ChatId"
-//import {Scrollbars} from 'react-custom-scrollbars'
 //change names 
-
 const Window = props => {
-    function itemf(testw, user, exists){
+    function itemf(testw, user){
         console.log(testw) 
         setItems(
-            testw != "back"?<ChatId action={itemf} chat_id={testw} user={user} exist={exists}/>:<Chat action={itemf}/>
+            testw != "back"?<ChatId action={itemf} chat_id={testw} user={user}/>:<Chat action={itemf}/>
+
         )
 
       }
@@ -27,12 +26,10 @@ const Window = props => {
                 ...{ display: props.visible ? 'block' : 'none' }
             }}
         >
-
-
+        
         
 
         {itemses}
-
         </div>
 
     )

@@ -26,7 +26,9 @@ import NotFound from './pages/NotFound/NotFound';
 import Community from './pages/Community/Community';
 import EditProfil from './pages/Profile/EditProfile';
 import { useSelector } from "react-redux";
-
+import { Provider } from 'react-redux'
+import store from './redux/store';
+//import socketIO from 'socket.io-client';
 
 
 function App() {
@@ -86,7 +88,7 @@ function App() {
         <Route path="*" element={<NotFound />} /> 
       </Routes>
     </BrowserRouter >
-    </>
+    </ >
 
   )
 }
