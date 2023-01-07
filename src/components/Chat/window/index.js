@@ -2,22 +2,22 @@ import React, { useState, useEffect } from 'react'
 
 //import ChatSearch from "../search/search";
 import { styles } from "../styles";
-import Chat from './Chat';
-import ChatId from "./ChatId"
-//import {Scrollbars} from 'react-custom-scrollbars'
+import Chat from "./Chat"
+import ChatId from "./startchat"
 //change names 
-
+//add back botton
 const Window = props => {
-    function itemf(testw, user, exists){
-        console.log(testw) 
+    function itemf(testw){
+        console.log(testw)//its statique need to change 
         setItems(
-            testw != "back"?<ChatId action={itemf} chat_id={testw} user={user} exist={exists}/>:<Chat action={itemf}/>
-        )
+            <ChatId/>
 
+        )
       }
 
-    const [itemses, setItems] = useState(<Chat action={itemf}/>);
+      const [test, setTest] = useState("test");
 
+    const [itemse, setItems] = useState(<Chat action={itemf}/>);
     
     return (
         <div 
@@ -27,12 +27,9 @@ const Window = props => {
                 ...{ display: props.visible ? 'block' : 'none' }
             }}
         >
-
-
         
-
-        {itemses}
-
+        
+        {itemse}
         </div>
 
     )

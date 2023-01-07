@@ -1,0 +1,15 @@
+.chatsearch{
+    margin-top: 2rem;
+    
+}
+.chat {
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 14;
+    margin-top: 00.5rem;
+    text-decoration: none;
+}

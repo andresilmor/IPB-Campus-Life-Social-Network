@@ -1,0 +1,11 @@
+.message_sender {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .message_receiver {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
