@@ -26,6 +26,10 @@ import NotFound from './pages/NotFound/NotFound';
 import Community from './pages/Community/Community';
 import EditProfil from './pages/Profile/EditProfile';
 import { useSelector } from "react-redux";
+import ManageForum from './adminPages/ManageForum/ManageForum';
+import ManageUsers from './adminPages/ManageUsers/ManageUsers';
+import ManageEvents from './adminPages/ManageEvents/ManageEvents';
+import ManageGroup from './adminPages/ManageGroups/ManageGroup';
 
 
 
@@ -81,6 +85,31 @@ function App() {
             <Route path=":id" element={<Eventid/>}/>
             <Route path="new" element={<Create_event/>}/>
           </Route>
+          <Route path="ManageForum" >
+            <Route index element={<ManageForum/>} />
+            <Route path=":id">
+              <Route index element={<ForumId />}  />
+            </Route>
+            <Route path="new" element={<ForumNew />} />
+          </Route>
+          <Route path="Manageusers" >
+            <Route index element={<ManageUsers/>} />
+          </Route>
+          <Route path="Manageevents" >
+            <Route index element={<ManageEvents/>} />
+            <Route path=":id" element={<Eventid/>}/>
+            <Route path="new" element={<Create_event/>}/>
+          </Route>
+          <Route path="ManageGroups" >
+            <Route index element={<ManageGroup/>} />
+            <Route path=":id" >
+              <Route index element={<Group />} />
+              <Route path="discussion/:discussionId" element={<Discussion />} />
+              <Route path="discussion/new" element={<NewDiscussion />} />
+            </Route>
+            <Route path="new" element={<NewGroup />} />
+          </Route>
+
          
         </Route>
         <Route path="*" element={<NotFound />} /> 

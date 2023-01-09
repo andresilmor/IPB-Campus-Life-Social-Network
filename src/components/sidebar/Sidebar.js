@@ -13,14 +13,15 @@ export default function Sidebar() {
   const user = useSelector((state) => state.user);
 
   var tempPathname = window.location.pathname.substring(1).split("/")[0];
-  
+
   const [active, setActive] = useState(tempPathname);
-  
-  
 
 
-  console.log(user);
 
+
+  console.log(user.type);
+
+  if (user.type == "S") {
     return (
       <>
         <UserInfoStyleA name={user.first_name + " " + user.last_name} degree={user.degree} studentNumber={user.user_id} avatar={user.profile_image} userID={user.user_id}></UserInfoStyleA>
@@ -33,21 +34,35 @@ export default function Sidebar() {
         </div>
 
         {user.friends.length > 0 &&
-        <>
-          <div className={classes.friends}>
-            <p>Friends</p>
-          </div>
-          <div className='user-list-sidebar'>
-              
-            {user.friends.map(userFriend => (
-              <ButtonUserIcon goTo={"/profile/" + userFriend.user_id} avatar={userFriend.photo} plusClasses="mb-1 me-1"></ButtonUserIcon>
-            ))
-            }
-          </div>
-        </>
+          <>
+            <div className={classes.friends}>
+              <p>Friends</p>
+            </div>
+            <div className='user-list-sidebar'>
+
+              {user.friends.map(userFriend => (
+                <ButtonUserIcon goTo={"/profile/" + userFriend.user_id} avatar={userFriend.photo} plusClasses="mb-1 me-1"></ButtonUserIcon>
+              ))
+              }
+            </div>
+          </>
         }
       </>
-    )
+    );
+  } else {
+    return (
+      <>
+        <UserInfoStyleA name={user.first_name + " " + user.last_name} degree={user.degree} studentNumber={user.user_id} avatar={user.profile_image} userID={user.user_id}></UserInfoStyleA>
 
+        <div className='my-5'>
+          <ButtonSidebar action={() => setActive("Manage users")} textToDisplay={"Manage users"} Icon={HomeIcon} goTo="/Manageusers" selected={active == "users"}></ButtonSidebar>
+          <ButtonSidebar action={() => setActive("Manage forum")} textToDisplay={"Manage Fórum"} Icon={ForumIcon} goTo="/ManageForum" selected={active == "forum"}></ButtonSidebar>
+          <ButtonSidebar action={() => setActive("Manage groups")} textToDisplay={"Manage Groups"} Icon={GroupIcon} goTo="/ManageGroups" selected={active == "groups"}></ButtonSidebar>
+          <ButtonSidebar action={() => setActive("Manage events")} textToDisplay={"Manage Events"} Icon={EventIcon} goTo="/Manageevents" selected={active == "events"}></ButtonSidebar>
+        </div>
+      </>
+    );
   }
+
+}
 
